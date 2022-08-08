@@ -1,7 +1,7 @@
 import styles from '../styles/Home.module.css'
 import {Flex , Box , Text , Button} from "@chakra-ui/react"
 import Link from 'next/link'
-
+import Image from "next/image"
 const Banner = ({purpose,title1,title2,desc1,desc2,linkName,buttonText,imgUrl}) =>{
   return(
     <Flex flexWrap="wrap" justifyContent="center" alignItems="center" m ="10">
