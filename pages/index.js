@@ -26,7 +26,7 @@ const Banner = ({purpose,title1,title2,desc1,desc2,linkName,buttonText,imgUrl}) 
 
 
 export default function Home({propertiesForRent,propertiesForSale}) {
-  // console.log(propertiesForRent)
+  // console.log(propertiesForRent.map((property=>{console.log(property.coverPhoto)})))
   return (
     <Box>
       <Banner 
@@ -40,7 +40,7 @@ export default function Home({propertiesForRent,propertiesForSale}) {
       imgUrl="https://bayut-production.s3.eu-central-1.amazonaws.com/image/145426814/33973352624c48628e41f2ec460faba4" 
       />
       <Flex flexWrap="wrap">
-        <Property/>
+        {propertiesForSale.map((property)=><Property property={property} key={property.id}/>)}
       </Flex>
       <Banner 
       purpose="for rent"
@@ -53,7 +53,8 @@ export default function Home({propertiesForRent,propertiesForSale}) {
       imgUrl="https://bayut-production.s3.eu-central-1.amazonaws.com/image/110993385/6a070e8e1bae4f7d8c1429bc303d2008"
       />
       <Flex flexWrap="wrap">
-      <Property/>
+      {propertiesForRent.map((property)=><Property property={property} key={property.id}/>)}
+
       </Flex>
     </Box>
   )
