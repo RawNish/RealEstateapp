@@ -22,7 +22,7 @@ export const  Property = ({property: {title,externalId,coverPhoto ,isVerified,pr
                         <Box fontWeight="bold" fontSize="lg">AED {millify(price)} {rentFrequency? rentFrequency : `/-`}</Box>
                     </Flex>
                     <Box>
-                        <Avatar size="" src={agency?.logo?.url}/>   
+                        <Avatar size="sm" src={agency?.logo?.url}/>   
                     </Box>
                 </Flex>
                 <Flex alignItems="center" p='1' justifyContent="space-between" w="250px" color="blue.400">

@@ -15,7 +15,7 @@ const Banner = ({purpose,title1,title2,desc1,desc2,linkName,buttonText,imgUrl}) 
         <Text color="gray.500" fontSize="sm" fontWeight="medium">{purpose}</Text>
         <Text fontSize="3xl" fontWeight="bold">{title1}<br/>{title2}</Text>
         <Text fontSize="lg" color="gray.700" paddingTop="3" paddingBottom="3">{desc1}<br/>{desc2}</Text>     
-        <Button bgColor="blue" fontSize="xl">
+        <Button bgColor="blue" fontSize="xl" color="white">
           <Link href={linkName}>{buttonText}</Link>
         </Button> 
       </Box>
