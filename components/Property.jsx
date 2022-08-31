@@ -7,10 +7,10 @@ import BsGridFill from "react-icons/bs"
 import{Box ,Flex,Text,Avatar} from "@chakra-ui/react"
 import defaultHouse from "../assets/images/sample house.jpg"
 
-export const  Property = ({property: {title,externalId,coverPhoto ,isVerified,price,rentFrequency,agency ,rooms ,baths,area}})=>{
+export const  Property = ({property: {title,externalID,coverPhoto ,isVerified,price,rentFrequency,agency ,rooms ,baths,area}})=>{
     
     return(
-        <Link href={`/property/${externalId}`} passHref>
+        <Link href={`/property/${externalID}`} passHref>
         <Flex flexWrap="wrap" w="420px" p="5" paddingTop="0" justifyContent="flex-start">
             <Box>
                 <Image src={coverPhoto ? coverPhoto.url :defaultHouse } width={400} height={260} alt = "Image not available at the moment"/>
