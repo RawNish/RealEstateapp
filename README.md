@@ -20,7 +20,7 @@ https://rapidapi.com/apidojo/api/bayut/
 
 
 View the Deployed project at:
-realestateapp-pqji3xkw8-rawnish.vercel.app
+realestateapp-rho.vercel.app
 
 
 
